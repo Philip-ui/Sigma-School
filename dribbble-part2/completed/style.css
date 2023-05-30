@@ -1,0 +1,185 @@
+
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --card-height : 410px;
+    --card-width : 430px;
+    --gray-color : #ccc;
+    --primary-color : #ea4c89;
+    --three-cards: 1040px;
+    --five-cards:1440px;
+}
+
+body{
+    margin: 0;
+    /*padding: 20x;*/
+
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: var(--five-cards);
+    margin: 0 auto;
+}
+
+.card-container{
+    height: var(--card-height);
+    width: var(--card-width);
+    margin: 10px;
+}
+
+.card-container .card-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+    /*box-shadow: 2px 2px 4px rgba(0,0,0,0.4) ;*/
+}
+
+
+.card-container .card-image:hover {
+    box-shadow: inset 0px -40px 20px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+.card-container .card-image div:hover {
+    box-shadow: inset 0px -40px 20px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+.card-container .card-image div img{
+    position: relative;
+    overflow: hidden; 
+    z-index: -2;
+
+}
+
+.card-container .card-image::before{
+
+}
+
+.card-container .card-image:hover::before {
+
+  }
+
+.card-interaction{
+    display: flex;
+    padding: 5px;
+
+    justify-content: space-between;
+    align-items: center;
+
+}
+ul{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+li{
+    list-style-type: none;
+    font-size: 10px;
+    margin: 5px;
+    /* border: solid; */
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    font-weight: 600;
+}
+
+.team{
+    padding: 2px 3px;
+    background-color: var(--gray-color) ;
+    color: white;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+.profile-icon{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+.profile-icon:hover{
+    background-color: var(--primary-color);
+}
+.team:hover{
+    background-color: var(--primary-color);
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.icons svg{
+    /* padding: ; */
+    /* border: 1px solid black; */
+    fill: var(--gray-color);
+    background-color: white;
+    visibility: visible;
+    cursor: pointer;
+}
+
+.icons svg:hover{
+    fill: var(--primary-color);
+}
+span{
+    padding-left: 5px;
+}
+
+.love-icon svg{
+    /* height: 14px; */
+    width: 14px;
+    display: flex;
+    /* align-items: center; */
+    
+}
+
+/* Hover content */
+.card-image{
+    position: relative;
+}
+.card-hover{
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 10px; */
+    border: 2px dotted black;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    z-index: 200;
+}
+.card-hover-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.icons-hover{
+    margin: 0 5px;
+    padding:  5px;
+    fill: var(--gray-color);
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+   
+}

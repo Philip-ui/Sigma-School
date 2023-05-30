@@ -1,0 +1,218 @@
+
+*{
+    margin: 0;
+}
+body{
+    margin: 0;
+    /* background: #fafafb; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:  #ffd166;
+/*   overflow: auto;
+    height: 100%; */
+    /* align-items: center; */
+}
+
+/* -----------empty placeholder------------ */
+.placeholder {
+    width: 100%;
+    height: 65vh;
+    
+}
+#p-one{
+   background: #118ab2; 
+}
+#p-two{
+   background: #06d6a0; 
+}
+#p-three{
+    /* position: relative; */
+   background: #ffd166; 
+}
+
+/* ---------back to top button----------- */
+
+.back-to-top{
+    display: flex;
+    justify-content: flex-end;    
+    position: fixed;
+    z-index: 3;
+    right: 20px;
+    bottom: 15px;
+}
+
+.back-to-top a img{
+    opacity: 0.45;
+   
+    /* margin: 20px; */
+}
+
+.back-to-top a:hover img{
+opacity: 0.75;
+}
+
+
+/* ---------footer section---------------- */
+footer{
+    margin: 0;
+    padding: 0px;
+    background: #e7e7ea; 
+    font-family: Arial, Helvetica, sans-serif;
+    /* max-width: 1440px; */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+.footer-container{
+    margin: 20px 70px 0 ;
+    /* border: 1px dotted lightblue; */
+    display: flex;
+    max-width: 100vw;
+    /* justify-content: space-between; */
+    /* align-items: baseline; */
+    padding: 72px 0px;
+    border-bottom: 1px solid #e7e7e9;
+    display: flex;
+    
+    
+}
+.company-info   {
+    width: 20%;
+    /* border: 1px solid pink; */
+    /* margin: 0 30px; */
+    /* flex: 1; */
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.dribble-info p{
+    width: 85%;
+    margin-bottom: 10px;
+    
+   
+}
+
+
+/* --------- redirection -------------- */
+.redirection{
+flex: 1;
+display: flex;
+gap: 10px;
+}
+.direction-column{
+
+}
+
+.direction-column h3{
+ font-size: 12px;
+ font-weight: 700;
+ line-height: 20px;
+ margin-left: 40px;
+ margin-top: 16px;
+}
+.direction-column ul{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px; 
+}
+
+.direction-column ul li{
+    list-style-type: none;
+    margin-top: 16px;
+}
+
+
+/*--------------- company info------------- */
+.dribble-icon svg{
+    width: 50%;
+    height: 50;
+    margin-bottom: 10px;
+}
+
+/* ------social media icons------------ */
+.sm-icons{
+  display: flex;
+  gap: 15px;
+
+}
+
+.sm-icons a{
+   
+    
+}
+.sm-icons a svg{
+    width: 15px;
+    height: 15px;
+}
+
+/*-----Footer credit part ----------*/
+.footer-credit{
+    font-size: 12px;
+    margin: 20px 60px;
+}
+
+.credit-right{
+  
+}
+
+.credit-right p span{
+  
+}
+.credit-right img{
+
+}
+
+@media only screen and (max-width: 600px)  {    
+    .footer-container {
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+        padding-right: 40px;
+        padding-left: 20px;
+        font-size: 14px;
+        flex-wrap: wrap;
+        
+    }
+
+    .company-info {
+        width: 100%; 
+    }
+
+    .dribble-info p{
+        width: 100%;
+        font-size: 14px;
+    }
+    .dribble-icon svg{
+        width: 20%;
+
+    }
+
+    .redirection{
+        flex-wrap: wrap;
+        gap: 0px;
+        justify-content: space-between; 
+    }
+
+    .direction-column {
+        padding-left: 0;
+    }
+
+    .direction-column h3 {
+        margin-left: 0px;
+        font-size: 14px;
+    }
+
+    .direction-column ul {
+       margin-left: -40px;
+       font-size: 14px;
+    }
+}
+        

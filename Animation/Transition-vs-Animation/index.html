@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5241/5241678.png">
+  <style>
+    body {
+      /*text-align: center;*/
+      width: fit-content;
+      /*margin: 0 auto;*/
+      margin: 0;
+    }
+
+    body * {
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .animate {
+
+      animation-name: slideInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: both;
+      background-color: #ffd670;
+
+    }
+
+    .slide-right {
+      animation-name: slideInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: both;
+      background-color: #5404cc;
+    }
+
+    /* Utility classes */
+    .animate--infinite {}
+
+    .animate--delay-1s {}
+
+    .animate--fast {
+      animation-name: animate--fast;
+      animation-duration: 0.5s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      transform-origin: center bottom;
+      background-color: #a970ff;
+    }
+
+    .shake {
+      animation-name: shake;
+      animation-duration: 0.5s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      transform-origin: center bottom;
+      background-color: #a970ff; 
+    }
+
+    .animate--slow {}
+
+    /* Animations */
+    @keyframes slideInLeft {
+        from{
+            transform: translateX(-300px);
+        }
+        to{
+            transform: translateX(0px);
+        }
+    }
+
+
+    @keyframes rotate {
+        from{
+            transform: rotate(0);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes slideInRight{ 
+    from{
+      transform: translateX(300px);      
+       }
+    to {
+        transform: translateX(0px);
+       }
+    }
+    @keyframes animate--fast {
+        from{
+            transform: rotate(-10deg)
+        }
+        to{
+            transform: rotate(10deg)
+        }
+    }
+    
+    @keyframes shake {
+        from{
+            transform: rotate(5deg)
+        }
+        to{
+            transform: rotate(-5deg)
+        }
+    }
+
+    .rotate {
+      animation-name: rotate;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      transform-origin: center bottom;
+      background-color: #ff70a6;
+    }
+
+    h2 {
+      background-color: #70d6ff;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="animate">Slide in left</h1>
+  <h2 class="slide-right animate--fast shake">Slide in right Shake</h2>
+  <h2 class="slide-right">Slide in right</h2>
+  <h3 class="rotate">Rotate infinite</h3>
+</body>
+
+</html>

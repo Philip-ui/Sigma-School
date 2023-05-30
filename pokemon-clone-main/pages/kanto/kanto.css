@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: currentColor;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 60%;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(240, 231, 231);
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+/* Header title */
+.bold-letter {
+  width: 60%;
+  
+}
+
+h1 {
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Back to homepage button */
+.button-left a {
+  background: grey;
+  border-radius: 5px;
+  border: 2px solid rgb(81, 79, 79);
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.5s;
+  color: black;
+}
+
+.button-left a:hover {
+  transform: scale(0.9);
+}
+/* 1st Generation Pokemon cards container */
+.poke-container {
+  background-color: rgb(248, 248, 251);
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: 60%;
+}
+/* Pokemon cards */
+.pokemon {
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  background-color: beige;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Footer Copyright */
+footer {
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  background-color: rgb(240, 231, 231);
+}
+
+footer p {
+  font-weight: 600;
+  font-size: large;
+}
+
+@media (min-width: 768px) {
+  .poke-container {
+    min-width: 768px;
+    width: 100%;
+  }
+  .img-container {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 350px) {
+  .header {
+    min-width: 100%;
+  }
+
+  .poke-container {    
+    width: 100%;    
+    flex-wrap: wrap;
+  }
+
+  .pokemon {
+    min-width: 200px;
+  }
+
+  footer {
+    width: 100%;
+  }
+  
+}

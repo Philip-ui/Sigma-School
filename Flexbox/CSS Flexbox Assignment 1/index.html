@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Assignment 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .text_inside {
+            font-size: large !important;}
+    </style>
+</head>
+<body>
+    <!-- Blog on technology, entrepreneurship, startups, investments and topics that will help you
+         in your learning/entrepreneurial journey! -->
+         <!-- Header -->
+    <header class="ourblogs">
+        <div class="title_desc">
+            <!-- Description about the blog -->
+            <h1>Our Blogs</h1>
+            <p>Read about technology, entrepreneurship, startups, investments and topics
+                 that will help you in your learning/entrepreneurial journey!</p>
+        </div>
+        <div class="box_image">
+            <!-- main blog image -->
+            <img src="https://sigmaschool.co/assets/typewriter.jpg" alt="typewriter"/>
+        </div>       
+    </header>
+    <main class="main">
+        <!-- Individual blog cards -->
+      <section>
+        <div class="blogcard extra1">
+                <div><img src="pic-1.jpg" width="300" height=250" class="image-border"  alt="Tips and tricks to help you in debugging your code"/></div>                                    
+                <p><span>self-taught</span><span>tech</span></p>
+                <div class="blogcard-desc"><b>Tips and tricks to help you in debugging your code</b></div>
+                <div class="author"><img src="https://sigmaschool.co/assets/favicon.svg" alt="sigma school logo" /><div>Sigma School</div><div style="text-align: right;flex: 1; font-size: medium;">22/02/2023 12:21PM</div></div>
+        </div>
+        <div class="blogcard extra1">            
+            <div><img src="pic-2.jpg" width="300" height="250" class="image-border"  alt="Online Learning VS Coding Bootcamps"/></div>                     
+            <p><span>tech</span></p>
+            <div><b>Online Learning VS Coding Bootcamps</b></div>
+            <div class="author"><img src="https://sigmaschool.co/assets/favicon.svg" alt="sigma school logo" /><div>Sigma School</div><div style="text-align: right;flex: 1; font-size: medium;">22/02/2023 12:21PM</div></div>
+        </div>
+        <div class="blogcard extra1 blogcard-desc-1">            
+            <div><img src="pic-3.jpg" width="300" height="250" class="image-border"  alt="5 Tips for Writing Clean Code"/></div>                     
+            <p><span>self-taught</span><span>tech</span></p>
+            <div class="blogcard-desc"><b>5 Tips for Writing Clean Code</b><br /><br /></div>
+            <div class="author"><img src="https://sigmaschool.co/assets/favicon.svg" alt="sigma school logo" /><div>Sigma School</div><div style="text-align: right;flex: 1; font-size: medium;">22/02/2023 12:21PM</div></div>
+        </div>
+      </section>    
+    </main>
+    <footer></footer>
+</body>
+</html>

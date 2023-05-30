@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial,Helvetica, sans-serif;
+  font-weight: 100;
+  background-color: #ececec;
+  font-size: 14px;
+  color: #202035;
+  letter-spacing: 0.5px;
+}
+
+.showcase-container{
+  
+  /* background-color: orange; */
+  /* border: solid; */
+
+  margin: 10px;
+  flex: 1 0 30%;
+}
+
+section{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container{
+  max-width: 300px;
+  height: 400px;
+  /* background-color: red; */
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  box-shadow: -10px -10px  15px rgba(255,255,255,0.55),
+              10px 10px 15px rgba(70,70,70,0.12);
+}
+
+.container:hover{
+  box-shadow: 10px 10px  15px rgba(255,255,255,0.55),
+              -10px -10px 15px rgba(70,70,70,0.12);
+}
+
+header{
+  margin: 50px;
+  /* border: black solid; */
+  /* width: 33%;
+  height: 25px; */
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: -10px -10px  15px rgba(255,255,255,0.55),
+              10px 10px 15px rgba(70,70,70,0.12),
+              inset -10px -10px  15px rgba(255,255,255,0.55),
+              inset 10px 10px 15px rgba(70,70,70,0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 32px;
+
+}
+
+.title{
+  position: absolute;
+  bottom: 10px;
+
+  width: 200px;
+  height: 50px;
+  box-shadow: inset -10px -10px  15px rgba(255,255,255,0.55),
+              inset 10px 10px 15px rgba(70,70,70,0.12);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Changing Gradient Text */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.text{
+font-size: 32px;
+font-weight: 800;
+outline: none;
+text-transform: uppercase;
+background: linear-gradient(135deg, #5335cf 0%, #de005e 25%, #f66e48 50%, #de005e 75%, #5335cf 100%);
+background-size: 400%;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
+animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+to{
+  background-position: 400%;
+}
+}

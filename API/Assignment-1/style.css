@@ -1,0 +1,25 @@
+.blog_card {
+    background: rgb(249, 247, 247);    
+    width: 500px;
+    border-radius: 0.5rem;
+    border: 2px solid grey;  
+    padding: 2rem 3rem;
+    font-family: system-ui;
+
+}
+
+.inside {
+    display:flex;
+    flex-direction: column;
+     
+}
+
+span {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;    
+}
+
+button {
+    cursor: pointer;
+}

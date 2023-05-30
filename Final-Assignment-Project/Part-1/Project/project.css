@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+span {
+    font-size: 84px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 200px auto;
+}
+
+.google-text {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.G-color {
+    color: blue;
+}
+
+.oe-color {
+    color: red;
+}
+
+.o2-color {
+    color: #edf434;
+}
+
+.l-color {
+    color: green;
+}
+
+form {
+    display: flex;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.search-input {
+    padding: 8px 15px 8px 15px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 1px 1px 2px 1px #827f7f ;
+    width: 500px;   
+}
+
+.search-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;    
+    z-index: 10;
+  }
+
+.boxtwo {
+    display: flex;
+    gap: 10px;    
+}
+
+.button-styling {
+    border: none;
+    padding: 5px 15px;
+    color:#716b6b;
+    font-weight: 600;
+}
+
+
+
+
+

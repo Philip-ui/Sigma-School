@@ -1,0 +1,34 @@
+Hello, my name is Chong. In this video, I'm going to demo my baby, Cocktail
+Search App project. This App does a search for a cocktail or cocktails using API 
+endpoints called Cocktail by API-Ninjas. The backend part is coded in 
+Javascript promise, async and await handlers. The look and feel of this 
+web app are done by using flexbox and css on the html file, meaning the 
+styling of this web app.
+
+It's a one page web app. At the top is the cocktail icon and the catchy title.
+Below left is the brief description of this app and instructions of how to use
+this app. To the right is a picture of cocktails. Further down the greyish 
+box is the place where you enter the cocktail name. Once the enter key is
+pressed, it will display the cocktail name, ingredients and instructions
+on how to make it. After this, below, is the Cocktail Blog where articles of 
+the blogs are shown. Anyway, the cocktail 'Bloody Mary' is shown in the 
+search box and ingredients are listed and also the instructions. You can 
+type 'Bloody', for example and cocktails associated with 'Bloody' will be 
+displayed. Next, on further testing, say 'asfdsf' is typed. This would 
+resulted in no cocktails displayed and an error alert 'No results. Please 
+enter cocktail name again' will pop up. Therefore a cocktail name must be 
+entered again.
+
+The feature I'm most proud of is creating div element and looping the list 
+of ingredients for more than one cocktail names.
+
+The one coding struggle I face is to create a 'for each' loop for ingredients 
+to be insert into cocktailElement.innerHTML.
+
+One improvement which I like to work on is to search for API endpoints that
+can encompass all or more comprehensive the cocktail names in the world and
+also display the cocktail picture for each cocktail name.
+
+Thank you.
+
+ 

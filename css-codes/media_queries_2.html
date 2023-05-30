@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries 2</title>
+    <style>
+        #container {
+            width: 968px;
+            margin: 0px auto;
+            
+        }
+
+        .header {
+            background: lightblue;
+            height: 75px;
+            width: 964px;
+            border: solid 2px #000;
+            color: white;
+            position: relative;
+           
+        }
+
+        .sidebar {
+            float: left;
+            width: 176px;
+            height: 9500px;
+            background: lightgrey;
+            border-left: solid 2px #000;
+            border-bottom: solid 2px #000;
+        }
+
+        .main {
+            width: 786px;
+            height: 9500px;
+            background: lightyellow;
+            border-right: solid 2px #000;
+            border-left: solid 2px #000;
+            border-bottom: solid 2px #000;
+            overflow: auto;
+
+        }
+        
+        .hamburger {
+            display:none;
+        }
+
+        @media (max-width: 600px) {
+            .hamburger {
+            display:block;
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            top: 10px;
+            left: 10px;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="header">
+            <div class="hamburger"><img src="https://e7.pngegg.com/pngimages/402/481/png-clipart-hamburger-button-drop-down-list-computer-icons-navigation-bars-and-page-menu-templates-text-rectangle-thumbnail.png" alt="hamburger icon" width="50" height="50"/></div>
+        </div>
+        <div class="sidebar"></div>
+        <div class="main"></div>
+
+    </div> 
+</body>
+</html>

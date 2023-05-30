@@ -1,0 +1,237 @@
+html {
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
+    color: #58799a;
+}
+
+main {
+    margin-bottom: 20px;
+}
+header {
+    display:flex;       
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+.logo {
+   margin-top: 10px;
+}
+.header_title {
+    display:flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;    
+    margin-top: 20px;    
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(185, 184, 184);
+}
+
+.home_desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.home_desc h2 {
+    margin: 10px;
+}
+
+.home_pict {
+    text-align: center;
+    width: 60%;
+}
+
+.home_pict img {
+    width: 100%;
+}
+
+form {
+    box-sizing: border-box;
+    background-color: #cdd4db;
+    padding: 20px;    
+}
+
+form label {
+    color: rgb(61, 57, 57);
+    margin: 10px;
+}
+
+.cocktail_search {
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 30%;
+    border: 2px solid grey;    
+}
+
+.cocktail_ingredient {
+    margin-top: 20px;
+}
+
+.cocktail_name {
+    margin-top: 10px;
+}
+
+.ingredient_list {
+   margin-left: 20px;
+}
+
+.instructions {
+    margin-top: 10px;
+}
+
+.cocktail_blog  {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+    justify-content: center;
+    align-items: center;
+}
+
+.cocktail_blog h2 {
+    margin-bottom: 10px;
+}
+
+.blog_area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.blog {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;    
+    margin-bottom: 20px;
+    width: 60%;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 2px 2px 2px 3px #f4f3f3;    
+}
+
+.blog h4{
+    margin-top: 5px;
+    overflow-wrap: break-word;
+    width: 100%;
+    text-align: justify;
+    margin: 10px;
+}
+
+.blog a {
+    text-decoration: none;
+}
+.blog img {
+    width: 100%;
+    border-radius: 5px 5px 0px 0px; 
+}
+
+footer {
+    margin-bottom: 30px;
+}
+@media (min-width: 767px) {
+    .home {
+        display: flex;
+        flex-wrap: nowrap;     
+        flex-direction: row;
+    }
+
+    .home_desc {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .home_pict img {
+        width: 100%;
+        flex: 1;       
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cocktail_search {
+        width: 500px;
+    }
+
+    .cocktail_blog  {
+        display: flex;
+        justify-content: center;        
+    }
+
+    .blog_area {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;  
+    }
+
+    .blog {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+        margin-left: 5px;        
+        width: 40%;
+        flex-grow: 1;
+    }
+
+    .blog h4{
+        margin-top: 0px;
+        overflow-wrap: break-word;
+        width: 100%;
+        text-align: justify;
+        margin: 0px;
+    }
+}
+
+@media (min-width: 1023px) {
+    .blog {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+        margin-left: 5px;        
+        width: 20%;
+        flex-grow: 1;
+    }
+
+    .blog h4{
+        margin-top: 5px;
+        overflow-wrap: break-word;
+        width: 100%;
+        text-align: left;
+        margin: 10px;
+    }
+}

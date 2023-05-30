@@ -1,0 +1,35 @@
+.card {
+  background: rgb(249, 247, 247);    
+  width: 500px;
+  border-radius: 0.5rem;
+  border: 2px solid grey;  
+  padding: 2rem 3rem;
+  font-family: system-ui;
+  display: flex;
+  margin-top: 20px;
+  }
+  
+  .card-details {
+    margin-left: 40px;
+  }
+
+  #person-image {
+    border-radius: 9999px;
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .card p {
+    font-size: 15px;
+    margin: 10px 0;
+  }
+  
+  
+
+ 

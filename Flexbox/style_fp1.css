@@ -1,0 +1,52 @@
+.container {
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 968px;
+    font-family: system-ui;
+}
+.header {
+    background: rgb(232, 226, 226);
+    height: 150px;
+    width: 968px;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 35px;
+}
+
+
+
+.flexi {
+    height: 300px; 
+    width: 968px; 
+    list-style-type: none;
+    display: flex;
+    align-items: stretch;  
+}
+
+.column1 { 
+    background: rgb(99, 97, 97);
+    flex: 1 1 25%;
+}
+
+.column2 { 
+    background: rgb(154, 152, 152);
+    flex: 1 1 50%;
+}
+
+.column3 { 
+    background: rgb(191, 189, 189);
+    flex: 1 1 25%;
+}
+
+.footer {
+    background: rgb(232, 226, 226);
+    height: 100px;
+    width: 968px; 
+    text-align: center;
+    padding-top: 50px;
+
+}

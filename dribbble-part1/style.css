@@ -1,0 +1,195 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  *{
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  body{
+      margin: 0;
+      padding: 0;
+  }
+  
+  header {
+      display: flex;
+      align-self: flex-end;
+      margin: 30px auto;
+  }
+  .left-menu img{
+    width: 75px;
+    height: 50px;
+  }
+  
+  #search-icon {
+      height: 18px;
+      width: 18px;
+  }
+  
+  button{
+      border: none;
+      background-color: white;
+      color: grey;
+      cursor: pointer;      
+  }
+  
+  .left-menu{
+      display: flex;
+      gap: 1rem;
+      margin: 0 2rem;
+      flex: 1;
+  }
+  .right-menu{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-right: 1rem;
+   
+  }
+  
+  #sign-up-button{
+    padding: 0 1.25rem;
+    background-color: #ea4c89;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #sign-up-button:hover{
+    background: #f082ac;
+  }
+
+  .section-hero{
+    background-color: rgb(77, 73, 73, .75);
+    padding: 2rem 0;
+    min-height: auto;
+    display: flex;
+    position: relative;
+  }
+  
+  .hero-content{    
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 90vh;        
+  }
+
+  li{
+      list-style-type: none;
+      
+  }
+  .hero-category ul{
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+       
+  }
+  
+  .hero-category ul li{
+      padding: 0.95rem 1rem;
+      background-color: rgb(21, 20, 20);
+      color:white;
+      cursor: pointer;      
+      border-radius: 50px;
+      transition: all 0.3s;
+      
+  }
+
+  .hero-category ul li:hover {      
+      background-color: white;
+      color: black;
+  }
+
+  .hero-text-words{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0; 
+  }
+  
+  .hero-text-words h1{
+      color: white;
+      line-height: 0px;
+  }
+  
+  .hero-text-words h4{
+    color: white;
+    line-height: 0px;
+    font-weight: 400;
+}
+
+  .hero-text-words  div {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-left: -45%;
+    
+  }
+  
+  .search-input {
+    padding: 15px 35px 15px 35px;
+    border-radius: 50px;
+    border: none;
+    width: 500px;
+    background-color: rgb(255, 254, 253);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 16.5px;
+    left: 15px;
+    opacity: 0.5;
+    z-index: 10;
+  }
+
+  .hero-suggestion {
+    margin-top: 80px;
+  }
+  .hero-suggestion ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+          
+  }
+  
+  .hero-suggestion ul li{
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: white; 
+    border-radius: 50px;
+    border: 1px solid white;
+    font-size: 0.75rem;
+    cursor: pointer;
+  }
+  
+  .hero-suggestion ul li #trending-search{
+    
+  }
+  .hero-vid{
+    position: absolute;
+    height: 100vh;
+    transition: all 0.8s ease-in-out; 
+    top: 0;
+    left: 0;  
+    z-index: -1;
+    overflow: hidden;
+    object-fit: contain;
+        
+  } 
+
+  @media (max-width: 768px)  {
+  .hero-vid {
+    width: 100vw;
+    height: auto;
+  }
+}
+
+  
+  

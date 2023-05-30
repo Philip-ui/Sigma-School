@@ -1,0 +1,243 @@
+body {
+    font-family: system-ui;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0px 300px;
+    color: rgb(45, 43, 43);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 770px;
+    overflow: auto;      
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+    background: rgb(250, 247, 247);
+}
+
+/* Company Logo */
+.logo {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 100%;
+    height: 30px;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(45, 43, 43);    
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Registration Button */
+/* -- Start-- */
+.button_right{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.button_right a {
+    background: lightgreen;
+    text-align: right;
+    border-radius: 5px;
+    border: 1px solid lightseagreen;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.5s;      
+}
+
+.button_right a:hover {
+    transform: scale(0.9);
+}
+/* -- End -- */
+
+/* Header Section */
+/* -- Start-- */
+.intouch {
+    padding: 0px 20px;
+    background:rgb(255, 254, 254);   
+}
+/* -- End -- */
+
+/* Contact Information */
+/* -- Start-- */
+.contact {
+    background:  rgb(250, 247, 247);
+    padding: 20px 20px;
+    display: flex;    
+    min-height: 70vh;
+    color: white;
+}
+
+.coninfo {
+    flex: 1;
+    background:lightseagreen ;  
+}
+
+.coninfo .subconinfo {
+    margin: 20px 20px;
+}
+
+.coninfo p {
+    text-align:justify;
+}
+
+.infodetails {
+    display: flex;
+    align-items: center;
+}
+
+.infodetails > img {
+    width: 20px;
+    height: 20px;
+    z-index: 1;    
+}
+
+.infodetails > span {
+    margin-left: 4px;
+    margin-bottom: 2px;
+}
+
+.infodetails > span > a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Social Media icons */
+.socialmedia {
+    margin-top: 10px;
+    display: flex;        
+    justify-content: flex-start;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: -10px;
+}
+
+/* Add a hover effect */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: lightseagreen;
+    color: white;
+  }
+
+/* Instagram */
+.fa-instagram {
+    background: lightseagreen;
+    color: white;
+  }
+
+/* Twitter */
+.fa-twitter {
+    background: lightseagreen;
+    color: white;
+  }
+
+/* -- End -- */
+
+/* Contact Form */
+/* -- Start-- */
+.contform {
+    flex: 2;
+    padding: 20px 20px;
+    background: white;
+    color: rgb(45, 43, 43);
+    font-weight: 500; 
+}
+.mainform {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;       
+}
+
+.subform1 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}    
+
+.subform1 > div {
+    margin-bottom: 10px;
+}
+.formcontrol {
+    border-radius: 5px;
+    border: 1px solid  #ccc;
+    padding: 5px;
+    margin-top: 5px;   
+}
+
+.subform3 {
+    margin: 10px 0px;
+    flex: 2;
+}
+textarea {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    margin-top: 5px;   
+}
+
+.submit_right {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: lightgreen;
+    text-align: right;
+    border-radius: 5px;
+    border: 1px solid lightseagreen;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.5s;
+}
+
+.submit_right:hover {
+    transform: scale(0.9);
+}
+/* -- End -- */
+
+@media (min-width: 426px) and (max-width: 1200px)  {
+body {
+    margin: 0px 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        margin: 0px 0px;
+        }
+    } 

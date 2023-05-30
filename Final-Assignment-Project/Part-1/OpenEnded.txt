@@ -1,0 +1,69 @@
+1. We need a loop to do repeating tasks.
+Example of for loop:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Loop</h2>
+
+<p id="foodie"></p>
+
+<script>
+const food = ["Nasi Lemak", "Chicken Rice", "Hamburger"];
+
+let dishes = "";
+for (let i = 0; i < food.length; i++) {
+  dishes += food[i] + "<br>";
+}
+
+document.getElementById("foodie").innerHTML = dishes;
+</script>
+
+</body>
+</html>
+
+2. Console.log is a function that print what is within (). eg: let name = 'David'; 
+console.log(name); It will print on the screen: David. 
+Return is for returning results of a function. Eg: 
+const a = 2;
+const b = 5;
+function add (a, b) {
+    return a + b;
+}
+
+console.log(add(a, b));
+The value returned is: 7.
+
+3. Truthy values in Javascript are values that are deemed to be true in Boolean context.
+falsy values in Javascript are values which are regarded as false in Boolean context.
+Example of truthy and Falsy:
+var isHungry = true;
+var isNoon = true;
+
+if (isNoon === true && isHungry === true) {
+return `Food is serve`;}
+Explanation: if it is 12noon and is Hungry(both values are true), then Food is served.
+
+if (isHungry === false && isNoon === true) {
+return `No food is served`;} 
+Explanation: If not hungry and is 12noon (one is false the other is true), then no Food is served.
+
+4. Internet is information which are shared across all the computers around the world which are
+connected in a network.
+
+5. A website works when a user typed in a request on the browser. The request would be sent to
+the server asking it to send a copy of the request or website to the user browser.
+The basic files that are involved are:
+1) HTML (Hypertext Markup Language) Files:They are a markup language that have 
+texts, links, images and other elements that makes up a webpage.
+2) CSS (Cascading Style Sheets) Files: They are a language that styled a webpage. It dictataes the 
+colors, fonts, sizes, margins, and other visual aspects of the webpage to give it a more presentable
+look.
+3) JavaScript Files: They are a programming language that makes the webpage dynamic and interactive.
+They contain scripts that enable tasks such as moving images, validations, fetching data from servers
+and etc.
+4) Images and Multimedia Files: Images, videos, audiofiles and other multimedia elements that are in 
+the websites.
+
+
+

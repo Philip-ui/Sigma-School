@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Search</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="./script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/cocktail-logo.png" alt="logo">
+        <div class="header_title">
+            <h1>MAKE ME A COCKTAIL</h1>
+            <h5>The world renown cocktail library</h5>
+        </div>
+    </header>
+    <main>
+        <section class="home">
+            <div class="home_desc">
+                <h2>Interactive Cocktail Cabinet</h2>
+                <p>Key in the cocktail name and out comes the list of ingredients to make the cocktail and also instrustions on how to make it.
+                    In this resource, there are thousands of cocktails. Please key in the full title of the cocktail. Some examples
+                    are: Bloody Mary, Singapore Sling, Margarita, Old Fashioned, Negroni, Daiquiri and etc.
+                </p>
+            </div>
+            <div class="home_pict">
+                <img src="images/cocktail_home.jpg" alt="">
+            </div>
+        </section>
+       
+        <section class="cocktail_title">
+            <form action="">
+                <label for="cocktail">Enter Cocktail Name:</label>
+                <input class="cocktail-search" type="text" id="cocktail" placeholder="" value="bloody mary"><img src="" />
+            </form>
+            <div class="cocktail_ingredient">
+                <h2 class="cocktail_name">Cocktail name: Bloody Mary</h2>
+                <span>Ingredients:</span><br />
+                <ul class="ingredient_list">
+                    <li>4.5 cl (3 parts) vodka</li>
+                    <li>9 cl (6 parts) Tomato juice</li>    
+                    <li>1.5 cl (1 part) Lemon juice</li>    
+                    <li>2 to 3 dashes of Worcestershire Sauce</li>    
+                    <li>Tabasco sauce</li>    
+                    <li>Celery salt</li>   
+                    <li>Black pepper</li>
+                </ul>
+                <p class="instructions">Instructions: Stirring gently, pour all ingredients into highball glass. Garnish.</p>
+                
+            </div>
+        </section>
+        <section class="cocktail_blog">
+            <h2>Cocktail Blog</h2>
+            <div class="blog_area">
+                <div class="blog">
+                    <img src="images/cocktail_3.jpg" />
+                    <h4><a href="https://www.epicurious.com/recipes-menus/classic-cocktails-and-variations-article" >6 Classic Cocktails—and Riffs That Take Them Up a Notch</a></h4>
+                </div>
+                <div class="blog">
+                    <img src="images/cocktail_2.jpg" />
+                    <h4><a href="https://www.epicurious.com/expert-advice/rules-of-riff-how-to-adjust-classic-cocktail-recipes-article" >The Rules of Riffing: How to Tweak Classic Cocktail Recipes</a></h4>
+                </div>
+                <div class="blog">
+                    <img src="images/soda.jpg" />
+                    <h4><a href="https://www.epicurious.com/expert-advice/the-best-soda-maker-for-the-sparkliest-water-and-the-bubbliest-cocktails-article" >The Best Soda Makers, Spare From Buying Sparkling Water</a></h4>
+                </div>
+                <div class="blog">
+                    <img src="images/cocktail_1.jpg" />
+                    <h4><a href="https://www.epicurious.com/expert-advice/horsefeather-drink-origins#intcid=_epicurious-bottom-recirc_fb544c03-8a54-4ff3-a267-b1f1ad3b3eec_similar2-3" >The Real Story Behind Kansas City’s Signature Cocktail</a></h4>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>&copy; 2023 Chong Kok Onn</h3>
+    </footer>
+</body>
+</html>
