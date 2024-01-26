@@ -32,13 +32,13 @@ body {
 /* Layout */
 main {
     max-width: 24rem;
-    margin: 0 auto;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    margin: 0 auto;   
+ /* scroll-snap-type: y mandatory;
+    overflow-y: scroll;*/
 }
 
 section {
-    scroll-snap-align: center;
+/*    scroll-snap-align: center;*/
 }
 
 @media (min-width: 640px) {

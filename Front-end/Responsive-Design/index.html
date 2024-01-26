@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">    
+  <head>        
+    <title>Tailwind CSS: Responsive Design</title>        
+    <script src="https://cdn.tailwindcss.com"></script>    
+  </head>    
+  <body>        
+    <div class="border-2 border-black p-10 m-10 w-40 h-40 flex items-center justify-center">            
+      <p class="sm:hidden">Red</p>            
+      <p class="hidden sm:block md:hidden lg:hidden xl:hidden">Yellow</p>            
+      <p class="hidden md:block lg:hidden xl:hidden">Green</p>            
+      <p class="hidden lg:block xl:hidden">Blue</p>            
+      <p class="hidden xl:block">Purple</p>        
+    </div>    
+  </body>
+</html>

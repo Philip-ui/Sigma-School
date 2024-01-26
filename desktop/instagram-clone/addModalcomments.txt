@@ -1,0 +1,6 @@
+{currentPost && (
+  <AddPostComments
+   currentPost={currentPost}           
+   />
+ )}
+           

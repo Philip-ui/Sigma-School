@@ -1,0 +1,10 @@
+dilip@dilip.com
+Dilip*1234
+Username is available.
+Username is already in use. Please choose another.
+
+dj@dgh.com
+Dilip*1234
+
+setUsernameError("No such username.");
+      setPasswordError("");

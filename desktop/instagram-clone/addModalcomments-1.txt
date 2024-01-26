@@ -1,0 +1,51 @@
+ const addComment = () => {
+        if (currentPost) {
+            // Create a new comment object with the content
+            const newComment = {
+                content: commentText,
+                // You can add additional properties to the comment if needed
+            };
+
+            // Dispatch the addCommentToPost action to add the comment to the current post
+            dispatch(addCommentToPost({ postId: currentPost.id, comment: newComment }));
+
+            // After successfully adding the comment, close the modal
+            handleCloseComment();
+        }
+    };
+
+ return (
+        <Modal show={showCommentModal} onHide={handleCloseComment} size="lg">
+            <Modal.Header closeButton>
+                <Modal.Title>Add Comment</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                <Row>
+                    <Col md={6}>
+                        {/* Display the image on the left */}
+                        <Image src={currentPost.image} fluid />
+                    </Col>
+                    <Col md={6}>
+                        {/* Display comments on the right */}
+                        <Form.Group>
+                            <Form.Control
+                                as="textarea"
+                                rows={6}
+                                value={commentText}
+                                onChange={(e) => setCommentText(e.target.value)}
+                                placeholder="Enter your comment"
+                            />
+                        </Form.Group>
+                    </Col>
+                </Row>
+            </Modal.Body>
+            <Modal.Footer>
+                <Button variant="secondary" onClick={handleCloseComment}>
+                    Close
+                </Button>
+                <Button variant="primary" onClick={addComment}>
+                    Add Comment
+                </Button>
+            </Modal.Footer>
+        </Modal>
+    );

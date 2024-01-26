@@ -96,8 +96,16 @@ form label {
   border: 2px solid grey;
 }
 
+.cocktail_results {
+  max-width: 320px;
+}
+
 .cocktail_ingredient {
   margin-top: 20px;
+  max-width: 300px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 
 .cocktail_name {
@@ -194,6 +202,15 @@ footer {
     justify-content: center;
   }
 
+  .cocktail_results {
+    max-width: 767px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
   .cocktail_search {
     width: 500px;
   }
@@ -232,6 +249,16 @@ footer {
 }
 
 @media (min-width: 1023px) {
+
+  .cocktail_results {
+    max-width: 1440px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
   .blog {
     display: flex;
     justify-content: center;

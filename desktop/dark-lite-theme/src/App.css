@@ -1,0 +1,13 @@
+/* App.css */
+*{
+  text-align: center;   
+}
+
+.dark{
+  background-color: rgb(39, 38, 38);
+  color: white;
+}
+
+button {
+  background-color: rgb(12, 201, 12);
+}

@@ -1,0 +1,2 @@
+Create a 'Profile Edit' page. This page will allow users to add or update
+profile image, name
